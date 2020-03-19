@@ -1,15 +1,14 @@
+import 'package:first_flutter/app_screens/first_screen.dart';
 import 'package:flutter/material.dart';
 
-// void main() => runApp(MyFlutterApp());
-
-// Same as below for less line of code
+// Both the methods are same
+/*
 void main(){
-
   runApp(MyFlutterApp());
-
 }
+*/
 
-
+void main() => runApp(MyFlutterApp());
 
 class MyFlutterApp extends StatelessWidget{
   @override
@@ -22,17 +21,7 @@ class MyFlutterApp extends StatelessWidget{
         appBar: AppBar(
           title: Text("First Flutter App Screen"),
         ),
-        body: Material(
-          color: Colors.lightBlueAccent,
-          child: Center(
-            child:
-            Text(
-              "Hii, Abhinav Sharma",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(color: Colors.white, fontSize: 30.0),
-            ),
-          ),
-        ),
+        body: FirstScreen()
       ),
     );
   }
